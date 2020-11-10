@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitica</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+   <style>
+       *{
+    padding: 0%;
+    margin: 0%;
+}
+
+.container{
+   margin-top: 80%;
+
+}
+main{
+   margin-top: 20px;
+   margin-left: 15%;
+   margin-right: 50px;
+   margin-bottom: 20px;
+   
+}
+ 
+ body{
+ background-image: url("../images/background-01.png");
+    background-repeat: no-repeat;
+    background-size: 100%;   
+ }
+
+ .responsive-img{
+    transform: translateY(10px);
+}
+
+
+.row{
+
+    background-color: none;
+font-weight: bold;
+font-size: 20pt;  
+transform: translateY(50px);
+}
+
+
+.carousel{
+    width: 50%;
+ 
+}
+
+
+.modal-content{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.modal{
+height: auto;
+background-color: #b39ddb;
+}
+
+.container{
+  margin-top: 60px;
+}
+
+@media (max-width: 1024px) {
+     
+     #banner-season{
+      
+         background-image: url('./images/background-01.png');
+     }
+    
+ }
+ 
+ @media (max-width: 768px) {
+ 
+  body{
+background-image:url('../images/fondo2-01.jpg');
+background-color:#f3e5f5;;
+  } 
+ }
+ 
+ @media (max-width: 480px) {
+    body{
+background-image: url('../images/fondocell-01.jpg');
+background-color:#f3e5f5;
+  }
+
+}   
+   
+   </style>
+   
+<body>
+<!--barra inicio-->
+<header>  
+<nav class="nav-extended transparent">
+<div class="nav-wrapper"> 
+<img class="responsive-img" src="./images/logosi-01.png">
+<a class="brand-logo grey-text text-darken-4">Sitica</a>
+<a href="#" class="sidenav-trigger " data-target="menuside">
+  <i class="material-icons purple-text">menu</i>
+</a>
+<ul class="sidenav" id="menuside">
+  <li>
+    <div class="background purple"></div>
+    <a href="#">
+      <img src="./images/logosi-01.png" alt="" class="circle">
+    </a>
+  </li>
+  <li>
+    <a href="">
+      <i class="material-icons">home</i>
+      Home
+    </a>
+  </li>
+  <li>
+    <a href="">
+      <i class="material-icons">local_grocery_store</i>
+      Products
+    </a>
+  </li>
+  <li>
+    <a href="">
+      <i class="material-icons">assistant</i>
+      Support
+    </a>
+  </li>
+  <li>
+    <a href="">
+      <i class="material-icons">sentiment_very_satisfied</i>
+     about
+    </a>
+  </li>
+</ul>
+<ul id="nav-mobile" class="right hide-on-med-and-down">
+<li><a>Home</a></li>
+<li><a>Products</a></li>
+<li><a>Support</a></li>
+<li><a> about</a></li>
+<button class="btn modal-trigger purple" data-target="login">Login</button>
+
+<div id="login"class="modal">
+<div class="modal-content">
+    <div class="row">
+        <h4 class="purple-text text-darken-4 col s10">Inicia Sesión</h4>
+        <div class="row">
+            <div class="input-field col s10 ">
+              <input id="email" type="email" class="validate">
+              <label for="email ">Email</label>
+            </div>
+          </div>
+              <div class="row">
+                <div class="input-field col s10">
+                  <input id="password" type="password" class="validate">
+                  <label for="password">Password</label>
+                </div>
+              </div>
+            <div class="container">
+              <a href="" class="btn modal-close purple">Login</a>
+          <a href="" class="btn modal-close purple">cerrar</a>
+            </div>
+          </div>   
+</div>
+</div>
+</ul>
+</div>
+</nav>
+
+  
+  
+</header>
+ 
+
+<!-- MAIN-->
+<main>
+<!--Carrusel-->
+<div class="row">
+  <div class="content  purple lighten-3">
+  <div class="col s4">
+    <div class="carousel carousel-slider  col s12 m8 l7">
+        <a class="carousel-item"><img src="./images/atica-01.png"><p href="#">Ver más</p></a>
+        <a class="carousel-item"><img src="./images/citica-01.png"><p href="#">Ver más</p></a>
+        <a class="carousel-item"><img src="./images/sitica-01.png"><p href="#">Ver más</p></a>
+    </div>
+</div>  
+</div> 
+</div>
+
+<!--contenido-->
+<div class="container"></div>
+<p class="col s10 grey-text text-lighten-1">DO YOU EVER WORRY ABOUT.</p>
+<h4 class=" col s12 m8 l6 grey-text text-darken-2">We are going to launch things that helps to improve </h4>
+  <form class="col s6 l6 m6">
+  <div class="input-field col s6 m6 l6">
+  <i class="material-icons prefix purple-text text-darken-4 ">send</i>
+  <input id="icon_prefix" type="text" class="validate" >
+  <label for="icon_prefix ">Your email address</label>
+  </div>  
+  </form>
+  </div>
+
+</main>
+
+<!--Footer-->
+<footer class="page-footer purple lighten-4">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">Sitica</h5>
+        <p class="grey-text text-lighten-4">Trabajo que hice casi sin llorar .</p>
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <h5 class="white-text">Links</h5>
+        <ul>
+          <li><a class="grey-text text-lighten-3" href="#!">Twitter</a></li>
+          <li><a class="grey-text text-lighten-3" href="#!">Instagram</a></li>
+          <li><a class="grey-text text-lighten-3" href="#!">Facebook</a></li>
+          <li><a class="grey-text text-lighten-3" href="#!">Pinterest</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container ">
+    © 2014 Copyright Text
+    </div>
+  </div>
+</footer>
+
+<!--Script-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.carousel');
+    var instances = M.Carousel.init(elems,{
+        duration: 500,
+    } );
+  });
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.modal');
+    var instances = M.Modal.init(elems);
+  });
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems, );
+  });
+ </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
